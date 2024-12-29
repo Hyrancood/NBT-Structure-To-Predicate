@@ -1,4 +1,5 @@
 # NBT to JSON Predicate Converter
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Hyrancood/NBT-Structure-To-Predicate/blob/main/README.md)
 
 ## Описание
 Этот проект предоставляет инструменты для чтения файлов в формате NBT (Named Binary Tag), преобразования их в JSON-предикаты Minecraft. Система поддерживает работу с несжатыми и сжатыми (GZip) NBT-файлами.

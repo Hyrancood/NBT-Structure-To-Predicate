@@ -1,4 +1,6 @@
 # NBT to JSON Predicate Converter
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Hyrancood/NBT-Structure-To-Predicate/blob/main/README.md)
+[![ru](https://img.shields.io/badge/lang-ru-blue.svg)](https://github.com/Hyrancood/NBT-Structure-To-Predicate/blob/main/README-RU.md)
 
 ## Description
 This project provides tools to read NBT (Named Binary Tag) files, convert them into Minecraft JSON predicates. The system supports working with uncompressed and compressed (GZip) NBT files.
@@ -30,15 +32,6 @@ python from_nbt_to_predicate.py example.nbt 0 1 0 > predicate.json
 ### JSON predicate rotation
 You can also use the rotate module separately to make your predicate insensitive to building direction (*The direction of the blocks also rotates with the building!*).
 The `rotate.py` script rotates predicates 90 degrees (3 times), creating a set of predicates for all possible orientations.
-
-**Пример использования:**
-```bash
-python rotate.py <входной JSON-файл> <выходной JSON-файл> [-t]
-```
-- `<входной JSON-файл>` — путь к исходному JSON-файлу.
-- `<выходной JSON-файл>` — путь для сохранения результата.
-- `-t` — (опционально) используется для предикатов вида: `{"condition": "minecraft:all_of/any_of", "terms": [...]}`. Если же ваш предикат является простым списком предикатов, то флаг `-t` ставить не стоит.
-
 
 **Usage example:**
 ```bash
